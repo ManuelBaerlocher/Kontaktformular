@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+
+.contactMe {
+    background-color: black;
+    padding-top: 105px;
+    padding-bottom: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactMe span {
+    opacity: 0.66;
+}
+
+.contactMe a {
+    text-decoration: none;
+    color: #2efcd8;
+    opacity: 0.66;
+    transition: ease-in-out 225ms;
+
+
+}
+
+.contactMe a:hover {
+    opacity: 1;
+}
+
+.contactMe h1 {
+    color: #2efcd8;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 90px;
+    margin: 0;
+}
+
+.contactMeHead {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+.conactMeHead span {
+    opacity: 0.66;
+}
+
+.contactMeInputSection {
+    margin-top: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contactMeInputSection button {
+    color: #2dfcd8;
+    background-color: transparent;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 85px;
+    padding-right: 85px;
+    border-color: #2dfcd8;
+    border-width: 2px;
+    border-style: solid;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 24px;
+
+    transition: ease-in-out 125ms;
+}
+
+.contactMeInputSection button:hover {
+    color: white;
+    background-color: #2dfcd8;
+}
+
+
+.contactMeInputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contactMeInputContainer span {
+    margin-bottom: 16px;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contactMeInputContainer input {
+    width: 612px;
+    height: 39px;
+    background: #1a1a1a;
+    border-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 44px;
+    color: #989898;
+    padding-left: 17px;
+}
+
+.contactMeInputContainer textarea {
+    height: 179px;
+    width: 612px;
+
+    background: #1a1a1a;
+    border-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 44px;
+    color: #989898;
+    padding-left: 17px;
+    resize: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .contactMe {
+        background: #111010;
+        padding-top: 0;
+        align-items: normal;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contactMe h1 {
+        color: #2efcd8;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .contactMeHead {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+
+
+
+    .contactMeInputContainer input {
+        width: auto;
+    }
+
+    .contactMeInputContainer textarea {
+        width: auto;
+    }
+
+
+    .contactMeInputSection {
+        align-items: normal;
+    }
+
+    .contactMeButton {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+}

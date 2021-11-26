@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+    <form action="send_mail.php" method="PUT">
+        <input name="name" placeholder="Dein Name">
+
+        <input name="mail" placeholder="Dein Name">
+
+        <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
+
+        <button type="submit">Mail senden</button>
+    </form>
+    <div id="contactMe" class="contactMe">
+        <h1>Contact me.</h1>
+        <div class="contactMeHead"><span> Get in touch via the form below, or by emailing </span><a
+                href="mailto:hello@manuel.ch">hello@manuel.ch</a></div>
+        <form class="contactMeInputSection">
+            <div>
+                <div class="contactMeInputContainer">
+                    <span>Name</span>
+                    <input required="required" type="text" placeholder="Enter your name">
+                </div>
+                <div class="contactMeInputContainer">
+                    <span>Email address</span>
+                    <input required="required" id="mail" placeholder="Enter your mail">
+                </div>
+                <div class="contactMeInputContainer">
+                    <span>Message</span>
+                    <textarea required="required" class="contactMeInputMessage"
+                        placeholder="Enter your message"></textarea>
+                </div>
+            </div>
+            <div class="contactMeButton">
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
