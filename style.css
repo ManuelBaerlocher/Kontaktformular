@@ -2,6 +2,19 @@ body {
     margin: 0;
 }
 
+.mainContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer h1 {
+    color: #efefef;
+    font-weight: bold;
+    font-size: 64px;
+}
+
 .contactMe {
     background-color: black;
     padding-top: 105px;
@@ -105,6 +118,8 @@ body {
     color: #989898;
     padding-left: 17px;
 }
+
+
 
 .contactMeInputContainer textarea {
     height: 179px;
