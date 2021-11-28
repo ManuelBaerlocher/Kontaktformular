@@ -13,15 +13,16 @@ switch($_SERVER['REQUEST_METHOD']){
 
         $params = json_decode($json);
 
-        $email = $params->email;
+        $mail = $params->mail;
         $name = $params->name;
         $message = $params->message;
 
-        $recipient = 'crunck78@googlemail.com';
-        $subject = "Contact From $name <$email>";
-        $headers = "From:  noreply@mihai-andrei-neacsu.developerakademie.com";
+        $recipient = 'manuell@bluewin.ch';
+        $subject = "Contact From $name <$mail>";
+        $headers = "From:  noreply@manuel.ch";
 
         mail($recipient, $subject, $message, $headers);
+        
         break;
     default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);
