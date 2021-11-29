@@ -12,9 +12,15 @@ resultColor: string;*/
 function sendMail() {
   test();
 
+  let name = document.getElementById('name').value
+  let mail = document.getElementById('mail').value
+  let message = document.getElementById('message').value
+
   let formData = new FormData();
-  formData.append('nameField', 'value')
-  fetch("https://developerakademie.com/Kontaktformular/send_mail.php", {
+  formData.append('name', name)
+  formData.append('mail', mail)
+  formData.append('message', message)
+  fetch("http://manuel-baerlocher.developerakademie.com/Kontaktformular/send_mail.php", {
     method: "POST",
     body: formData
   });

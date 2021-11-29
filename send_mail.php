@@ -4,6 +4,9 @@
 
 $recipient = 'manuell@bluewin.ch';
 $redirect = 'sendMail.html';
+$mail->CharSet = 'UTF-8';
+$mail->Encoding = 'base64';
+
 
 ########### CONFIG END ###########
 
@@ -35,14 +38,15 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Methods: POST");
         header("Access-Control-Allow-Headers: content-type");
+
         exit;
     case ("POST"): //Send the email;
         header("Access-Control-Allow-Origin: *");
 
-        $subject = "Contact From " . $_POST['name'] . $_POST['mail'] ;
+        $subject = "Contact From " . utf8_decode($_POST['name']) ." ". $_POST['mail'] ;
         $headers = "From:  ".$_POST['mail'];
 
-        mail($recipient, $subject, $_POST['message'],  $headers);
+        mail($recipient, $subject, utf8_decode($_POST['message']),  $headers);
         
 
         exit;

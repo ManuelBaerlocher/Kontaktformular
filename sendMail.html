@@ -17,19 +17,19 @@
         <h1>Contact me.</h1>
         <div class="contactMeHead"><span> Get in touch via the form below, or by emailing </span><a
                 href="mailto:hello@manuel.ch">hello@manuel.ch</a></div>
-        <form onsubmit="sendMail();return false" class="contactMeInputSection">
+        <form onsubmit="sendMail();return false" class="contactMeInputSection" accept-charset="UTF-8">
             <div>
                 <div class="contactMeInputContainer">
                     <span>Name</span>
-                    <input name="name" required="required" type="text" placeholder="Enter your name">
+                    <input id="name" name="name" required="required" type="text" placeholder="Enter your name">
                 </div>
                 <div class="contactMeInputContainer">
                     <span>Email address</span>
-                    <input name="mail" required="required" id="mail" placeholder="Enter your mail">
+                    <input id="mail" name="mail" required="required" id="mail" placeholder="Enter your mail">
                 </div>
                 <div class="contactMeInputContainer">
                     <span>Message</span>
-                    <textarea name="message" required="required" class="contactMeInputMessage"
+                    <textarea id="message" name="message" required="required" class="contactMeInputMessage"
                         placeholder="Enter your message"></textarea>
                 </div>
             </div>
