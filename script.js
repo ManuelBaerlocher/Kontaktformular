@@ -9,8 +9,9 @@ resultColor: string;*/
    }
  }*/
 
-function sendMail() {
+async function sendMail() {
   test();
+  
 
   let name = document.getElementById('name').value
   let mail = document.getElementById('mail').value
@@ -20,11 +21,18 @@ function sendMail() {
   formData.append('name', name)
   formData.append('mail', mail)
   formData.append('message', message)
-  fetch("http://manuel-baerlocher.developerakademie.com/Kontaktformular/send_mail.php", {
+  await fetch("http://manuel-baerlocher.developerakademie.com/Kontaktformular/send_mail.php", {
     method: "POST",
     body: formData
+
   });
 
+  changeHTML();
+}
+
+function changeHTML() {
+  document.getElementById('submitButton').style.display = 'none';
+  document.getElementById('afterSendMail').innerHTML = 'Thank you for your message. I will get back to you as soon as possible.';
 }
 
 function test() {
